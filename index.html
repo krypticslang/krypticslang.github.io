@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfolio — Tu Nombre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1 class="logo">Tu Nombre</h1>
+        <nav class="nav" id="nav">
+          <a href="#about">Sobre mí</a>
+          <a href="#projects">Proyectos</a>
+          <a href="#contact">Contacto</a>
+        </nav>
+        <button id="menuToggle" class="menu-toggle" aria-label="Abrir menú">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h2>Hola — soy desarrollador/a</h2>
+          <p>Construyo aplicaciones web robustas y con buen diseño. Especializado/a en JavaScript, React y backend ligero.</p>
+          <a class="btn" href="#projects">Ver proyectos</a>
+        </div>
+      </section>
+
+      <section id="about" class="about container">
+        <h3>Sobre mí</h3>
+        <p>Breve descripción sobre tu experiencia, tecnologías favoritas y qué te hace diferente como dev.</p>
+      </section>
+
+      <section id="projects" class="projects container">
+        <h3>Proyectos</h3>
+        <div class="grid">
+          <article class="card">
+            <h4>Proyecto A</h4>
+            <p>Descripción corta del proyecto, tech stack y link a repo/demo.</p>
+            <p class="tags">React · Node · CSS</p>
+          </article>
+          <article class="card">
+            <h4>Proyecto B</h4>
+            <p>Descripción corta del proyecto, tech stack y link a repo/demo.</p>
+            <p class="tags">TypeScript · Express</p>
+          </article>
+          <article class="card">
+            <h4>Proyecto C</h4>
+            <p>Descripción corta del proyecto, tech stack y link a repo/demo.</p>
+            <p class="tags">Python · Flask</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact container">
+        <h3>Contacto</h3>
+        <p>Correo: <a href="mailto:tu@email.com">tu@email.com</a></p>
+        <p>GitHub: <a href="https://github.com/tuusuario" target="_blank" rel="noopener">github.com/tuusuario</a></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> Tu Nombre — Portfolio</small>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
