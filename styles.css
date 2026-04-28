@@ -44,8 +44,9 @@ body{
 .hero-panel p{margin:0;color:var(--muted);line-height:1.7}
 .about,.projects,.contact{padding:2.75rem 0}
 .about{border-top:1px solid var(--border);padding-top:2rem}
-.about h3,.contact h3,.section-head h3{margin:0 0 .75rem;font-size:1.2rem;letter-spacing:.06em;text-transform:uppercase}
-.about p,.section-head p,.contact p{color:var(--muted);max-width:720px;line-height:1.7;margin:0}
+.about h3,.contact h3,.section-head h3{margin:0 0 .75rem;font-size:1.1rem;letter-spacing:.06em;text-transform:uppercase}
+.about p,.section-head p,.contact p{color:var(--muted);max-width:64ch;line-height:1.75;margin:0}
+.lead{max-width:64ch}
 .section-head{display:flex;align-items:end;justify-content:space-between;gap:2rem;margin-bottom:1.25rem}
 .section-head p{max-width:28rem;text-align:right}
 .projects .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
@@ -65,6 +66,9 @@ body{
   transition:opacity .65s ease, transform .65s cubic-bezier(.2,.8,.2,1), filter .65s ease;
   will-change:opacity, transform, filter;
 }
+
+/* Improve paragraph rhythm */
+p{margin-bottom:1rem}
 
 .reveal.is-visible{
   opacity:1;
