@@ -1,65 +1,82 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Portfolio — Tu Nombre</title>
+    <title>Tu Nombre | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=3" />
+    <link rel="stylesheet" href="styles.css?v=4" />
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <img class="logo" src="assets/mainlogo-black.png" alt="type():line works" />
+        <img class="logo" src="assets/mainlogo-black.png" alt="type():line works logo" />
         <nav class="nav" id="nav">
-          <a href="#about">Sobre mí</a>
-          <a href="#projects">Proyectos</a>
-          <a href="#contact">Contacto</a>
+          <a href="#about">About</a>
+          <a href="#projects">Work</a>
+          <a href="#contact">Contact</a>
         </nav>
-        <button id="menuToggle" class="menu-toggle" aria-label="Abrir menú">☰</button>
+        <button id="menuToggle" class="menu-toggle" aria-label="Open menu">☰</button>
       </div>
     </header>
 
     <main>
       <section class="hero">
-        <div class="container">
-          <h2>Hola — soy desarrollador/a</h2>
-          <p>Construyo aplicaciones web robustas y con buen diseño. Especializado/a en JavaScript, React y backend ligero.</p>
-          <a class="btn" href="#projects">Ver proyectos</a>
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow">Independent developer</p>
+            <h2>Clean systems, bold interfaces, and reliable web products.</h2>
+            <p class="hero-text">I design and build modern frontends with strong visual structure, polished interactions, and a focus on fast, maintainable delivery.</p>
+            <div class="hero-actions">
+              <a class="btn" href="#projects">See work</a>
+              <a class="btn btn-secondary" href="#contact">Get in touch</a>
+            </div>
+          </div>
+          <aside class="hero-panel" aria-label="Snapshot">
+            <span class="panel-label">Now building</span>
+            <strong>Portfolio sites, product pages, and web tools.</strong>
+            <p>Frontend design, responsive layouts, and clean implementation in HTML, CSS, and JavaScript.</p>
+          </aside>
         </div>
       </section>
 
       <section id="about" class="about container">
-        <h3>Sobre mí</h3>
-        <p>Breve descripción sobre tu experiencia, tecnologías favoritas y qué te hace diferente como dev.</p>
+        <h3>About</h3>
+        <p>Short intro about your background, favorite technologies, and the kind of work you want to be hired for.</p>
       </section>
 
       <section id="projects" class="projects container">
-        <h3>Proyectos</h3>
+        <div class="section-head">
+          <h3>Selected work</h3>
+          <p>Three sample projects you can replace with real case studies, demos, or repos.</p>
+        </div>
         <div class="grid">
           <article class="card">
-            <h4>Proyecto A</h4>
-            <p>Descripción corta del proyecto, tech stack y link a repo/demo.</p>
-            <p class="tags">React · Node · CSS</p>
+            <p class="card-kicker">Web app</p>
+            <h4>Project Alpha</h4>
+            <p>A focused dashboard with a dark visual language and streamlined user flows.</p>
+            <p class="tags">HTML · CSS · JavaScript</p>
           </article>
           <article class="card">
-            <h4>Proyecto B</h4>
-            <p>Descripción corta del proyecto, tech stack y link a repo/demo.</p>
-            <p class="tags">TypeScript · Express</p>
+            <p class="card-kicker">Brand site</p>
+            <h4>Project Beta</h4>
+            <p>A high-contrast landing page built to present a product, service, or personal brand.</p>
+            <p class="tags">Responsive layout · Motion · Typography</p>
           </article>
           <article class="card">
-            <h4>Proyecto C</h4>
-            <p>Descripción corta del proyecto, tech stack y link a repo/demo.</p>
-            <p class="tags">Python · Flask</p>
+            <p class="card-kicker">Tooling</p>
+            <h4>Project Gamma</h4>
+            <p>A small utility or internal workflow tool built to reduce friction and save time.</p>
+            <p class="tags">API integration · UX · Performance</p>
           </article>
         </div>
       </section>
 
       <section id="contact" class="contact container">
-        <h3>Contacto</h3>
-        <p>Correo: <a href="mailto:tu@email.com">tu@email.com</a></p>
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:tu@email.com">tu@email.com</a></p>
         <p>GitHub: <a href="https://github.com/tuusuario" target="_blank" rel="noopener">github.com/tuusuario</a></p>
       </section>
     </main>
