@@ -15,9 +15,13 @@ document.addEventListener('DOMContentLoaded',()=>{
     '.hero-copy',
     '.hero-panel',
     '#about',
+    '#team',
     '.section-head',
     '.card',
-    '#contact'
+    '#contact',
+    '.services',
+    '.stats',
+    '.process'
   ];
 
   const revealElements = document.querySelectorAll(revealTargets.join(','));
@@ -41,6 +45,51 @@ document.addEventListener('DOMContentLoaded',()=>{
     revealElements.forEach(element => observer.observe(element));
   }else{
     revealElements.forEach(element => element.classList.add('is-visible'));
+  }
+
+  /* Project filters */
+  const filterButtons = document.querySelectorAll('.filter');
+  const projects = document.querySelectorAll('.project');
+  function applyFilter(filter){
+    projects.forEach(p=>{
+      const tags = p.getAttribute('data-filter-tags') || '';
+      if(filter === 'all' || tags.indexOf(filter) !== -1){
+        p.style.display = '';
+      }else{
+        p.style.display = 'none';
+      }
+    });
+  }
+  filterButtons.forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      filterButtons.forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      applyFilter(btn.getAttribute('data-filter'));
+    });
+  });
+
+  /* Expand technical details */
+  document.querySelectorAll('.expand').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const details = btn.nextElementSibling;
+      if(!details) return;
+      const opening = details.classList.toggle('open');
+      if(opening){
+        details.style.maxHeight = details.scrollHeight + 'px';
+      }else{
+        details.style.maxHeight = null;
+      }
+    });
+  });
+
+  /* Menu toggle for small screens */
+  if(menuToggle && nav){
+    // keep previous handler; ensure aria
+    menuToggle.addEventListener('click',()=>{
+      const visible = nav.style.display === 'flex';
+      nav.style.display = visible ? 'none' : 'flex';
+      menuToggle.setAttribute('aria-expanded', String(!visible));
+    });
   }
 
   // Smooth scrolling for anchor links

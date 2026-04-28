@@ -3,19 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Tu Nombre | Portfolio</title>
+    <title>TypeLineWorks — Production-ready Roblox systems</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=5" />
+    <link rel="stylesheet" href="styles.css?v=6" />
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <img class="logo" src="assets/mainlogo-black.png" alt="type():line works logo" />
+        <img class="logo" src="assets/mainlogo-black.png" alt="TypeLineWorks logo" />
         <nav class="nav" id="nav">
           <a href="#about">About</a>
-          <a href="#projects">Work</a>
+          <a href="#work">Work</a>
+          <a href="#services">Services</a>
           <a href="#contact">Contact</a>
         </nav>
         <button id="menuToggle" class="menu-toggle" aria-label="Open menu">☰</button>
@@ -23,70 +24,221 @@
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="container hero-layout">
-          <div class="hero-copy">
-            <p class="eyebrow">Independent developer</p>
-            <h2>Clean systems, bold interfaces, and reliable web products.</h2>
-            <p class="hero-text">I design and build modern frontends with strong visual structure, polished interactions, and a focus on fast, maintainable delivery.</p>
+          <div class="hero-copy reveal" data-reveal-delay="1">
+            <p class="eyebrow">Two specialists. One pipeline.</p>
+            <h1>Production-ready Roblox systems, built by specialists.</h1>
+            <p class="hero-text">TypeLineWorks is a two-person technical Roblox studio building polished gameplay systems, multiplayer architecture, and production-ready commission work for serious projects.</p>
             <div class="hero-actions">
-              <a class="btn" href="#projects">See work</a>
-              <a class="btn btn-secondary" href="#contact">Get in touch</a>
+              <a class="btn primary-cta" href="mailto:contact@typelineworks.com">Hire Us</a>
+              <a class="btn" href="#work">View Work</a>
             </div>
+            <p class="microcopy">Two developers. One production pipeline. No outsourcing. No fragmented workflow.</p>
           </div>
-          <aside class="hero-panel" aria-label="Snapshot">
-            <span class="panel-label">Now building</span>
-            <strong>Portfolio sites, product pages, and web tools.</strong>
-            <p>Frontend design, responsive layouts, and clean implementation in HTML, CSS, and JavaScript.</p>
+
+          <aside class="hero-panel reveal" data-reveal-delay="2" aria-label="Studio snapshot">
+            <span class="panel-label">Studio</span>
+            <strong>TypeLineWorks</strong>
+            <p class="muted">Compact, high-output development for premium Roblox commissions and production-ready systems.</p>
           </aside>
         </div>
       </section>
 
-      <section id="about" class="about container">
-        <h3>About</h3>
-        <p>Short intro about your background, favorite technologies, and the kind of work you want to be hired for.</p>
-      </section>
-
-      <section id="projects" class="projects container">
-        <div class="section-head">
-          <h3>Selected work</h3>
-          <p>Three sample projects you can replace with real case studies, demos, or repos.</p>
-        </div>
-        <div class="grid">
-          <article class="card">
-            <p class="card-kicker">Web app</p>
-            <h4>Project Alpha</h4>
-            <p>A focused dashboard with a dark visual language and streamlined user flows.</p>
-            <p class="tags">HTML · CSS · JavaScript</p>
-          </article>
-          <article class="card">
-            <p class="card-kicker">Brand site</p>
-            <h4>Project Beta</h4>
-            <p>A high-contrast landing page built to present a product, service, or personal brand.</p>
-            <p class="tags">Responsive layout · Motion · Typography</p>
-          </article>
-          <article class="card">
-            <p class="card-kicker">Tooling</p>
-            <h4>Project Gamma</h4>
-            <p>A small utility or internal workflow tool built to reduce friction and save time.</p>
-            <p class="tags">API integration · UX · Performance</p>
-          </article>
+      <section id="about" class="about container reveal" data-reveal-delay="1">
+        <div class="about-inner">
+          <h3>About</h3>
+          <p class="lead">TypeLineWorks is a two-person Roblox development studio focused on building performant, production-ready systems for serious games.</p>
+          <p>We specialize in custom gameplay systems, multiplayer infrastructure, backend architecture, and polished technical implementation. Our workflow is built around a simple principle: two specialists, one pipeline.</p>
+          <p>Clients work with a unified development team that handles architecture, implementation, iteration, and delivery under one production flow. This allows us to move faster, communicate better, and deliver cleaner systems than fragmented freelance pipelines.</p>
         </div>
       </section>
 
-      <section id="contact" class="contact container">
+      <section id="team" class="team container reveal" data-reveal-delay="1">
+        <h3>Team</h3>
+        <div class="team-grid">
+          <div class="member">
+            <div class="avatar">[avatar]</div>
+            <h4>Cryptic</h4>
+            <p class="role">Creative Lead / Technical Designer</p>
+            <p>Leads project direction, production planning, client communication, quality control, and gameplay implementation. Focused on system design, animation integration, and technical execution.</p>
+            <p class="small">Animation is integrated into our pipeline — not a separate add-on.</p>
+            <ul class="facts">
+              <li>4+ years scripting</li>
+              <li>7+ years Roblox development</li>
+            </ul>
+          </div>
+
+          <div class="member">
+            <div class="avatar">[avatar]</div>
+            <h4>Verde</h4>
+            <p class="role">Lead Programmer / Systems Engineer</p>
+            <p>Technical backbone: backend architecture, advanced scripting, optimization, and reliable multiplayer replication.</p>
+            <ul class="facts">
+              <li>6+ years scripting</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="services container reveal" data-reveal-delay="2">
+        <h3>Services</h3>
+        <p class="muted">Roblox Programming is the core of everything we do. UI and animation are integrated support services.</p>
+        <div class="services-grid">
+          <div>
+            <h4>Primary</h4>
+            <ul>
+              <li>Gameplay Programming</li>
+              <li>Full Roblox Systems</li>
+              <li>Multiplayer Architecture</li>
+              <li>Backend Systems</li>
+              <li>Networking / Replication</li>
+              <li>Combat & Weapon Systems</li>
+              <li>NPC / AI Systems</li>
+              <li>Data Persistence & Optimization</li>
+              <li>Technical Design & Commission Work</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Integrated Support</h4>
+            <ul>
+              <li>UI / UX Implementation (production-focused)</li>
+              <li>Animation Systems & Rig Integration</li>
+              <li>Character Systems & Viewmodel pipelines
+              </li>
+            </ul>
+            <p class="muted small">UI work is functional and implementation-driven. We prioritize usability and system cohesion over decorative design.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="projects container">
+        <div class="section-head reveal" data-reveal-delay="1">
+          <div>
+            <h3>Featured work</h3>
+            <p class="muted">Curated technical case studies and systems — selected for clarity and depth.</p>
+          </div>
+          <div class="filters" role="tablist" aria-label="Project filters">
+            <button class="filter active" data-filter="all">Featured</button>
+            <button class="filter" data-filter="systems">Systems</button>
+            <button class="filter" data-filter="combat">Combat</button>
+            <button class="filter" data-filter="backend">Backend</button>
+            <button class="filter" data-filter="commission">Commission Work</button>
+          </div>
+        </div>
+
+        <div class="grid" id="projectsGrid">
+          <article class="card reveal project" data-filter-tags="featured,combat,systems">
+            <div class="card-media">[video]</div>
+            <div class="card-body">
+              <p class="card-kicker">Combat · Systems</p>
+              <h4>FPS / TPS Weapon Systems</h4>
+              <p>Advanced weapon systems supporting R6 and R15 with clean replication and responsive handling.</p>
+              <p class="tags">Replication · FastCast · Animation-driven</p>
+              <button class="expand">Technical breakdown</button>
+              <div class="details">Predictive firing, reconciliation, animation-synced recoil, and efficient hit detection using FastCast.</div>
+            </div>
+          </article>
+
+          <article class="card reveal project" data-filter-tags="featured,systems">
+            <div class="card-media">[video]</div>
+            <div class="card-body">
+              <p class="card-kicker">Systems</p>
+              <h4>Grid Inventory System</h4>
+              <p>Grid-based inventory with modular item logic, efficient packing, and server validation.</p>
+              <p class="tags">State sync · Persistence · Modular</p>
+              <button class="expand">Technical breakdown</button>
+              <div class="details">Server-validated item movement, efficient delta updates, and persistent storage design.</div>
+            </div>
+          </article>
+
+          <article class="card reveal project" data-filter-tags="systems">
+            <div class="card-media">[video]</div>
+            <div class="card-body">
+              <p class="card-kicker">Systems</p>
+              <h4>Vehicle Chassis System</h4>
+              <p>Fully scripted vehicle chassis with customizable handling and server-authoritative controls.</p>
+              <p class="tags">Physics · Handling · Modular</p>
+              <button class="expand">Technical breakdown</button>
+              <div class="details">Custom wheel physics, suspension, and networked authoritative movement patterns.</div>
+            </div>
+          </article>
+
+          <article class="card reveal project" data-filter-tags="backend,commission">
+            <div class="card-media">[video]</div>
+            <div class="card-body">
+              <p class="card-kicker">Backend</p>
+              <h4>Shop Systems</h4>
+              <p>Scalable, transaction-safe shop implementations with rollback and analytics hooks.</p>
+              <p class="tags">Transactions · Persistence · Security</p>
+              <button class="expand">Technical breakdown</button>
+              <div class="details">Atomic purchase flows, datastore strategies, and secure validation patterns.</div>
+            </div>
+          </article>
+
+          <article class="card reveal project" data-filter-tags="combat">
+            <div class="card-media">[video]</div>
+            <div class="card-body">
+              <p class="card-kicker">Combat</p>
+              <h4>Sheriff Combat System</h4>
+              <p>Fast-paced sheriff-style combat using FastCast for fair, precise hits.</p>
+              <p class="tags">FastCast · Precision · Fairness</p>
+              <button class="expand">Technical breakdown</button>
+              <div class="details">Prediction, smoothing, and server-side validation to prevent unfair advantage.</div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="stats" class="stats container reveal" data-reveal-delay="2">
+        <div class="stats-grid">
+          <div class="stat"><strong>10+</strong><span>Years Combined Experience</span></div>
+          <div class="stat"><strong>4</strong><span>Years Working Together</span></div>
+          <div class="stat"><strong>5</strong><span>Core Systems Featured</span></div>
+          <div class="stat"><strong>Premium</strong><span>Commission Pipeline</span></div>
+        </div>
+      </section>
+
+      <section id="pricing" class="pricing container reveal" data-reveal-delay="3">
+        <h3>Pricing</h3>
+        <p class="muted">We do not publish fixed prices. Projects are scoped and quoted based on technical complexity and production requirements.</p>
+        <ul>
+          <li>Custom scoped quotes</li>
+          <li>Fixed project pricing</li>
+          <li>Milestone-based delivery</li>
+        </ul>
+        <p class="muted">You are hiring two specialists through one production pipeline — not two separate freelancers. This reduces production overhead, simplifies communication, and improves delivery consistency.</p>
+      </section>
+
+      <section id="process" class="process container reveal" data-reveal-delay="2">
+        <h3>Process</h3>
+        <ol class="steps">
+          <li><strong>Project Review</strong><p>We evaluate goals and constraints.</p></li>
+          <li><strong>Scope Breakdown</strong><p>Define deliverables and milestones.</p></li>
+          <li><strong>Quote & Timeline</strong><p>Custom pricing and schedule.</p></li>
+          <li><strong>Production</strong><p>Implementation, iteration, and QA.</p></li>
+          <li><strong>Delivery & Revisions</strong><p>Final delivery and support.</p></li>
+        </ol>
+      </section>
+
+      <section id="contact" class="contact container reveal" data-reveal-delay="1">
         <h3>Contact</h3>
-        <p>Email: <a href="mailto:tu@email.com">tu@email.com</a></p>
-        <p>GitHub: <a href="https://github.com/tuusuario" target="_blank" rel="noopener">github.com/tuusuario</a></p>
+        <p class="lead">Hire TypeLineWorks</p>
+        <p>Email: <a href="mailto:contact@typelineworks.com">contact@typelineworks.com</a></p>
+        <p>Discord: <a href="#">Placeholder Discord</a></p>
+        <div class="contact-actions">
+          <a class="btn primary-cta" href="mailto:contact@typelineworks.com">Hire Us</a>
+          <a class="btn" href="#work">View Work</a>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container">
-        <small>© <span id="year"></span> Tu Nombre — Portfolio</small>
+        <small>Most showcased systems were developed for internal, private, or commissioned use. Client identities and proprietary systems remain undisclosed for confidentiality unless authorized.</small>
       </div>
     </footer>
 
-    <script src="script.js?v=2"></script>
+    <script src="script.js?v=3"></script>
   </body>
 </html>

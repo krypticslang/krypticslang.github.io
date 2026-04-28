@@ -104,3 +104,52 @@ body{
     opacity:1;
   }
 }
+
+/* Team */
+.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:1rem}
+.member{background:linear-gradient(180deg,var(--card-strong),var(--card));padding:1.15rem;border-radius:12px;border:1px solid rgba(255,255,255,0.06)}
+.avatar{width:64px;height:64px;border-radius:12px;background:rgba(255,255,255,0.03);display:flex;align-items:center;justify-content:center;color:var(--muted);margin-bottom:1rem}
+.member h4{margin:.25rem 0 .15rem}
+.member .role{color:var(--muted);font-size:.92rem;margin-bottom:.6rem}
+.member .facts{margin-top:.8rem;padding-left:1rem;color:var(--muted)}
+
+/* Services */
+.services-grid{display:grid;grid-template-columns:1fr 420px;gap:2rem;align-items:start}
+.services-grid h4{margin-top:0}
+.services-grid ul{margin:0;padding-left:1.1rem;color:var(--muted)}
+
+/* Projects / Filters */
+.filters{display:flex;gap:.6rem;align-items:center}
+.filter{background:transparent;border:1px solid transparent;color:var(--muted);padding:.5rem .75rem;border-radius:10px;cursor:pointer}
+.filter.active{background:rgba(255,255,255,0.03);color:var(--text);border-color:var(--border)}
+.card-media{height:120px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border-radius:10px;margin-bottom:1rem;display:flex;align-items:center;justify-content:center;color:var(--muted)}
+.card-body{display:flex;flex-direction:column}
+.expand{margin-top:1rem;background:transparent;border:1px solid var(--border);color:var(--text);padding:.45rem .7rem;border-radius:8px;cursor:pointer}
+.details{max-height:0;overflow:hidden;transition:max-height .36s ease,padding .3s ease;color:var(--muted);padding:0}
+.details.open{padding-top:.9rem;max-height:240px}
+
+/* Stats */
+.stats-grid{display:flex;gap:2rem;justify-content:space-between;margin:2rem 0}
+.stat{background:linear-gradient(180deg,var(--card),var(--card-strong));padding:1rem;border-radius:12px;border:1px solid rgba(255,255,255,0.04);min-width:160px;text-align:left}
+.stat strong{display:block;font-size:1.6rem}
+.stat span{color:var(--muted)}
+
+/* Process */
+.steps{list-style:none;padding:0;margin:1rem 0 0;display:grid;grid-template-columns:repeat(5,1fr);gap:1rem}
+.steps li{background:var(--card);padding:1rem;border-radius:10px;text-align:center;border:1px solid rgba(255,255,255,0.03)}
+.steps li p{margin:0;color:var(--muted);font-size:.95rem}
+
+/* Contact */
+.contact .contact-actions{display:flex;gap:1rem;margin-top:1rem}
+.lead{font-weight:600;font-size:1.05rem;margin-bottom:.6rem}
+
+/* Utilities */
+.muted{color:var(--muted)}
+.microcopy{color:var(--muted);margin-top:1rem;font-size:.92rem}
+
+@media (max-width:900px){
+  .team-grid{grid-template-columns:1fr}
+  .services-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+}
+
