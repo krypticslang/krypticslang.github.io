@@ -68,6 +68,14 @@ document.addEventListener('DOMContentLoaded',()=>{
     });
   });
 
+  // Apply initial filter state (respect active button)
+  const activeBtn = document.querySelector('.filter.active');
+  if(activeBtn){
+    applyFilter(activeBtn.getAttribute('data-filter'));
+  }else{
+    applyFilter('all');
+  }
+
   /* Expand technical details */
   document.querySelectorAll('.expand').forEach(btn=>{
     btn.addEventListener('click',()=>{
