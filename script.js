@@ -76,16 +76,40 @@ document.addEventListener('DOMContentLoaded',()=>{
     applyFilter('all');
   }
 
-  /* Expand technical details */
-  document.querySelectorAll('.expand').forEach(btn=>{
+  /* Expand technical details (accessible) */
+  document.querySelectorAll('.expand').forEach((btn, i)=>{
+    const details = btn.nextElementSibling;
+    if(!details) return;
+    // assign ids for aria-controls
+    const detailsId = details.id || `details-${i}`;
+    details.id = detailsId;
+    details.setAttribute('role','region');
+    details.setAttribute('aria-hidden','true');
+    btn.setAttribute('aria-expanded','false');
+    btn.setAttribute('aria-controls', detailsId);
+
+    function closeDetails(){
+      details.classList.remove('open');
+      details.style.maxHeight = null;
+      details.setAttribute('aria-hidden','true');
+      btn.setAttribute('aria-expanded','false');
+    }
+    function openDetails(){
+      details.classList.add('open');
+      details.style.maxHeight = details.scrollHeight + 'px';
+      details.setAttribute('aria-hidden','false');
+      btn.setAttribute('aria-expanded','true');
+    }
+
     btn.addEventListener('click',()=>{
-      const details = btn.nextElementSibling;
-      if(!details) return;
-      const opening = details.classList.toggle('open');
-      if(opening){
-        details.style.maxHeight = details.scrollHeight + 'px';
-      }else{
-        details.style.maxHeight = null;
+      const isOpen = details.classList.contains('open');
+      if(isOpen) closeDetails(); else openDetails();
+    });
+
+    btn.addEventListener('keydown',(e)=>{
+      if(e.key === 'Enter' || e.key === ' '){
+        e.preventDefault();
+        btn.click();
       }
     });
   });
